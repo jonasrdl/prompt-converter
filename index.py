@@ -16,8 +16,6 @@ def zsh_to_bash_prompt(zsh_prompt):
     )
     return bash_prompt
 
-
-# Your example prompt to convert
-zsh_prompt = '%n@%m:%~$'
+zsh_prompt = input("Enter zsh prompt to convert: ")
 bash_prompt = zsh_to_bash_prompt(zsh_prompt)
 print(bash_prompt)
